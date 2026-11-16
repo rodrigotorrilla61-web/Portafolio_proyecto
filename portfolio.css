@@ -1,0 +1,106 @@
+:root {
+  --principal: #17365d;
+  --secundario: #2f75b5;
+  --fondo: #f5f7fa;
+  --blanco: #ffffff;
+  --texto: #202020;
+  --borde: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--texto);
+  background-color: var(--fondo);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--principal);
+  color: var(--blanco);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.frase-profesional {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--secundario);
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: var(--blanco);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--borde);
+}
+
+section h2 {
+  color: var(--principal);
+  border-bottom: 2px solid var(--secundario);
+  padding-bottom: 0.5rem;
+}
+
+#sobre-mi img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.tarjeta {
+  background-color: var(--fondo);
+  padding: 1.25rem;
+  border: 1px solid var(--borde);
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+  color: var(--secundario);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--principal);
+  color: var(--blanco);
+  margin-top: 2rem;
+}
